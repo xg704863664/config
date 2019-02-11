@@ -1,0 +1,11 @@
+server:
+  port: 8002
+eureka:
+  instance:
+    prefer-ip-address: true
+    lease-expiration-duration-in-seconds: 5  #如果现在超过了5秒的间隔
+    instance-id:  ${spring.cloud.client.ip-address}:${spring.application.name}:${server.port}
+    lease-renewal-interval-in-seconds: 2 # 设置心跳的时间间隔
+  client:
+    service-url:
+      defaultZone: http://localhost:8001/eureka
