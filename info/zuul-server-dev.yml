@@ -11,3 +11,6 @@ zuul:
      order-server:
           path: /order-server/**
           service-id: order-server
+ribbon:
+  eureka:
+    enabled: true
