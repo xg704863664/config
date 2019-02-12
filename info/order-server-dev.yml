@@ -3,9 +3,9 @@ server:
 eureka:
   instance:
     prefer-ip-address: true
-    lease-expiration-duration-in-seconds: 5  #如果现在超过了5秒的间隔
+    lease-expiration-duration-in-seconds: 5
     instance-id:  ${spring.cloud.client.ip-address}:${spring.application.name}:${server.port}
-    lease-renewal-interval-in-seconds: 2 # 设置心跳的时间间隔
+    lease-renewal-interval-in-seconds: 2 
   client:
     service-url:
       defaultZone: http://localhost:8001/eureka
