@@ -1,0 +1,8 @@
+server:
+  port: 8006
+eureka:
+  instance:
+    prefer-ip-address: true
+    lease-expiration-duration-in-seconds: 5
+    instance-id:  ${spring.cloud.client.ip-address}:${spring.application.name}:${server.port}
+    lease-renewal-interval-in-seconds: 2 
