@@ -1,5 +1,10 @@
 server:
   port: 8006
+spring:
+  cloud:
+    loadbalancer:
+      retry:
+        enabled: false
 eureka:
   instance:
     prefer-ip-address: true
