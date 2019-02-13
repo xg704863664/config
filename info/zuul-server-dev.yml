@@ -14,3 +14,13 @@ zuul:
 ribbon:
   eureka:
     enabled: true
+  ConnectTimeout: 10000
+  ReadTimeout: 8000
+
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 3000
