@@ -1,5 +1,7 @@
 server:
   port: 8002
+  tomcat:
+    max-threads: 1
 eureka:
   instance:
     prefer-ip-address: true
