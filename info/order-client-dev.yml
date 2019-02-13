@@ -14,14 +14,13 @@ eureka:
 feign:
   hystrix:
     enabled: true
-  httpclient:
-    connection-timeout: 10000
+ribbon:
+  ConnectTimeout: 10000
+  ReadTimeout: 8000
 hystrix:
   command:
     default:
       execution:
-        timeout:
-          enabled: true
         isolation:
           thread:
-            timeoutInMilliseconds: 6000
+            timeoutInMilliseconds: 10000
