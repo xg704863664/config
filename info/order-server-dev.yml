@@ -1,5 +1,5 @@
 config:
-  info: 324
+  info: 6666
 server:
   port: 8002
   tomcat:
