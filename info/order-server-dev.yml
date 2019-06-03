@@ -1,5 +1,5 @@
 config:
-  info: 123
+  info: 333
 server:
   port: 8002
   tomcat:
