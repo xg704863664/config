@@ -1,7 +1,7 @@
 config:
   info: 324
 server:
-  port: 8002
+  port: 8006
   tomcat:
     max-threads: 1
 eureka:
